@@ -54,7 +54,7 @@ type ChatRoom struct {
 	messageMu     sync.Mutex // protects the session's map
 	nextMessageID int
 
-	// why tow mutexes: mu and messageMu? efficiency, if we use one mutex for everything, broadcasting a message would
+	// why two mutexes: mu and messageMu? efficiency, if we use one mutex for everything, broadcasting a message would
 	// lock all the data, preventing new clients from joining. Separate mutexes mean diferent operations can happen concurrently
 
 	// Persistence
