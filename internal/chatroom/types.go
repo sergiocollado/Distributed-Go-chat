@@ -16,6 +16,10 @@ type Message struct {
 	Channel   string    `json:"channel"`   // "global" or "private:username"
 }
 
+// When the message is written/readed (Marshal/unMarshal) from the WAL, it should be something like:
+//{"id":1,"from":"Alice","content":"Hello world","timestamp":"2024-02-06T10:00:00Z","channel":"global"}
+//{"id":2,"from":"Bob","content":"Hi Alice!","timestamp":"2024-02-06T10:00:05Z","channel":"global"}
+
 // Client represents a connected user
 type Client struct {
 	conn         net.Conn    // TCP connection
