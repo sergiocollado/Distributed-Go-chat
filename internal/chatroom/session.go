@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/yourusername/chatroom/pkg/token"
+	"github.com/sergiocollado/Distributed-Go-chat/pkg/token"
 )
 
 func (cr *ChatRoom) createSession(username string) *SessionInfo {

@@ -227,7 +227,7 @@ func handleCommand(client *Client, chatRoom *ChatRoom, command string) {
 
 	case "/stats":
 		client.mu.Lock()
-		stats := fmt.Sprintf("Your Stats:\n")
+		stats := "Your Stats:\n"
 		stats += fmt.Sprintf("  Messages sent: %d\n", client.messagesSent)
 		stats += fmt.Sprintf("  Messages received: %d\n", client.messagesRecv)
 		stats += fmt.Sprintf("  Last active: %s ago\n",
@@ -284,7 +284,7 @@ func handleCommand(client *Client, chatRoom *ChatRoom, command string) {
 		if count > 100 {
 			count = 100
 		}
-		cr.sendHistory(client, count)
+		chatRoom.sendHistory(client, count)
 
 	case "/token":
 		chatRoom.sessionsMu.Lock()
@@ -292,7 +292,7 @@ func handleCommand(client *Client, chatRoom *ChatRoom, command string) {
 		chatRoom.sessionsMu.Unlock()
 
 		if session != nil {
-			msg := fmt.Sprintf("Your reconnect token:\n")
+			msg := "Your reconnect token:\n"
 			msg += fmt.Sprintf("   reconnect:%s:%s\n", client.username, session.ReconnectToken)
 			select {
 			case client.outgoing <- msg:

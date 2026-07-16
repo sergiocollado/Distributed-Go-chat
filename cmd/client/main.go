@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/sergiocollado/Distributed-Go-chat//chatroom/internal/chatroom"
+	"github.com/sergiocollado/Distributed-Go-chat/internal/chatroom"
 )
 
 func main() {
