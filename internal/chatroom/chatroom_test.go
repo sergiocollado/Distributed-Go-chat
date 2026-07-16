@@ -60,3 +60,26 @@ func TestBroadcast(t *testing.T) {
 		t.Fatal("Client2 didn't receive message")
 	}
 }
+
+/* Integration tests:
+
+# Terminal 1: Start server
+go run cmd/server/main.go
+
+# Terminal 2: Client 1
+go run cmd/client/main.go
+# Enter username: Alice
+
+# Terminal 3: Client 2
+go run cmd/client/main.go
+# Enter username: Bob
+
+# Terminal 4: Client 3
+go run cmd/client/main.go
+# Enter username: John
+
+# Test messaging between clients
+
+** Most probably this could be done automatically with the program 'expect'
+
+*/
