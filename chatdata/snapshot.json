@@ -1,0 +1,93 @@
+[
+  {
+    "id": 0,
+    "from": "system",
+    "content": "*** SERGIO joined the chat ***\n",
+    "timestamp": "2026-07-16T22:30:09.312229079+02:00",
+    "channel": "global"
+  },
+  {
+    "id": 1,
+    "from": "system",
+    "content": "*** Ana joined the chat ***\n",
+    "timestamp": "2026-07-16T22:30:51.351757162+02:00",
+    "channel": "global"
+  },
+  {
+    "id": 2,
+    "from": "Ana",
+    "content": "Hello there!\n",
+    "timestamp": "2026-07-16T22:30:55.626294428+02:00",
+    "channel": "global"
+  },
+  {
+    "id": 3,
+    "from": "SERGIO",
+    "content": "Hello Ana!\n",
+    "timestamp": "2026-07-16T22:31:06.525704346+02:00",
+    "channel": "global"
+  },
+  {
+    "id": 4,
+    "from": "Ana",
+    "content": "Hi there Sergio!\n",
+    "timestamp": "2026-07-16T22:31:13.088287308+02:00",
+    "channel": "global"
+  },
+  {
+    "id": 5,
+    "from": "SERGIO",
+    "content": "Nice to meet u\n",
+    "timestamp": "2026-07-16T22:31:18.325394735+02:00",
+    "channel": "global"
+  },
+  {
+    "id": 6,
+    "from": "SERGIO",
+    "content": ":)\n",
+    "timestamp": "2026-07-16T22:31:19.926380809+02:00",
+    "channel": "global"
+  },
+  {
+    "id": 7,
+    "from": "Ana",
+    "content": "mee too :)\n",
+    "timestamp": "2026-07-16T22:31:27.676626661+02:00",
+    "channel": "global"
+  },
+  {
+    "id": 8,
+    "from": "SERGIO",
+    "content": "quit\n",
+    "timestamp": "2026-07-16T22:32:38.076521849+02:00",
+    "channel": "global"
+  },
+  {
+    "id": 9,
+    "from": "Ana",
+    "content": "quit\n",
+    "timestamp": "2026-07-16T22:32:41.390705968+02:00",
+    "channel": "global"
+  },
+  {
+    "id": 10,
+    "from": "system",
+    "content": "Ana left the chat\n",
+    "timestamp": "2026-07-16T22:32:44.339726436+02:00",
+    "channel": "global"
+  },
+  {
+    "id": 11,
+    "from": "system",
+    "content": "SERGIO left the chat\n",
+    "timestamp": "2026-07-16T22:32:48.627500652+02:00",
+    "channel": "global"
+  },
+  {
+    "id": 12,
+    "from": "system",
+    "content": "*** Ana left the chat ***\n",
+    "timestamp": "2026-07-16T22:32:48.639592146+02:00",
+    "channel": "global"
+  }
+]
